@@ -6,7 +6,7 @@ import org.keycloak.services.messages.Messages;
 public class CustomAuthenticator extends UsernamePasswordForm {
 
 	@Override
-	protected String tempDisabledError() {
+	protected String disabledByBruteForceError() {
 		return Messages.ACCOUNT_TEMPORARILY_DISABLED;
 	}
 }
